@@ -1,0 +1,15 @@
+.AboutContent {
+  display: flex;
+  align-items: center;
+
+  //gap: 1rem;
+
+  .content {
+    flex:1;
+  }
+
+  .image {
+    flex: 1;
+    margin-right: $about-margin;
+  }
+}

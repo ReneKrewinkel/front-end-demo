@@ -1,0 +1,109 @@
+$tokens: (
+  unit: rem,
+  page: (
+    backgroundColor: white,
+    margin: 0,
+    padding: 0
+  ),
+  logo: '../images/old-logo.svg',
+  payoff: '../images/old-payoff.svg',
+  menu-trigger: '../images/old-trigger.svg',
+  colors: ((
+    type: white,
+    color: #FFF,
+    shades: ()
+  ), (
+    type: black,
+    color: #000,
+    shades: ()
+  ), (
+    type: footer-black,
+    color: #161616,
+    shades: ()
+  ), (
+    type: white-muted,
+    color: rgba(255,255,255,0.6),
+    shades: ()
+  ), (
+    type: red,
+    color: #D06C6C,
+    shades: ()
+  ), (
+    type: hover,
+    color: #AD5B5B,
+    shades: ()
+  )),
+  fonts: ((
+    type: main-text-regular,
+    uri: '../fonts/arial-webfont',
+    sizes: (12, 14, 16, 18, 20)
+  ), (
+    type: main-text-bold,
+    uri: '../fonts/arial_bold-webfont',
+    sizes: (12, 14, 16, 18, 20)
+  ), (
+    type: main-text-link,
+    uri: '../fonts/arial_bold-webfont',
+    sizes: (12, 14, 16)
+  ), (
+    type: label-text,
+    uri: '../fonts/arial_bold-webfont',
+    sizes: (12, 14, 16, 18, 20, 22, 24, 26, 28)
+  )),
+  button: (
+    closed: (
+      background-color: transparent,
+      border-color: transparent,
+      border-radius: 0,
+      color: #D06C6C
+    ),
+    open: (
+      background-color: transparent,
+      border-color: transparent,
+      border-radius: 0,
+      color: #D06C6C
+    ),
+    colored: (
+      background-color: #D06C6C,
+      border-color: #D06C6C,
+      border-radius: 0,
+      color: #FFF
+    )
+  ),
+  homepage: (
+    hero: (
+      background-image: '../images/assets/old-hero.png'
+    ),
+    about: (
+      background-color: #D06C6C,
+      image: '../images/assets/old-team.png',
+      margin: 0
+    ),
+    info: (
+      background-color: #FFF,
+      background-image: ""
+    ),
+    footer: (
+      background-color: #161616,
+      image: '../images/assets/old-team.png',
+      margin: 0
+    )
+  ),
+  headings: (
+    type: heading,
+    uri: '../fonts/anoblack-webfont',
+    variant: ((
+      h1: 28
+    ), (
+      h2: 28
+    ), (
+      h3: 28
+    ), (
+      h4: 26
+    ), (
+      h5: 24
+    ), (
+      h6: 22
+    ))
+  )
+);

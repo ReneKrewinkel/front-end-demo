@@ -1,0 +1,582 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1, h2, h3,
+h4, h5, h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-weight: normal;
+}
+
+/** FONTS **/
+/*! main-text-regular */
+@font-face {
+  font-family: "main-text-regular";
+  src: url("../fonts/arial-webfont.woff") format("woff"), url("../fonts/arial-webfont.woff2") format("woff2");
+}
+/*! main-text-bold */
+@font-face {
+  font-family: "main-text-bold";
+  src: url("../fonts/arial_bold-webfont.woff") format("woff"), url("../fonts/arial_bold-webfont.woff2") format("woff2");
+}
+/*! main-text-link */
+@font-face {
+  font-family: "main-text-link";
+  src: url("../fonts/arial_bold-webfont.woff") format("woff"), url("../fonts/arial_bold-webfont.woff2") format("woff2");
+}
+/*! label-text */
+@font-face {
+  font-family: "label-text";
+  src: url("../fonts/arial_bold-webfont.woff") format("woff"), url("../fonts/arial_bold-webfont.woff2") format("woff2");
+}
+/*! heading */
+@font-face {
+  font-family: "heading";
+  src: url("../fonts/anoblack-webfont.woff") format("woff"), url("../fonts/anoblack-webfont.woff2") format("woff2");
+}
+/** CUSTOM PROPERTIES **/
+:root {
+  /** COLOR **/
+  /*! Background Color */
+  /*! white */
+  --bg-white: #FFF;
+  /*! black */
+  --bg-black: #000;
+  /*! footer-black */
+  --bg-footer-black: #161616;
+  /*! white-muted */
+  --bg-white-muted: rgba(255, 255, 255, 0.6);
+  /*! red */
+  --bg-red: #D06C6C;
+  /*! hover */
+  --bg-hover: #AD5B5B;
+  /*! Foreground Color */
+  /*! white */
+  --fg-white: #FFF;
+  /*! black */
+  --fg-black: #000;
+  /*! footer-black */
+  --fg-footer-black: #161616;
+  /*! white-muted */
+  --fg-white-muted: rgba(255, 255, 255, 0.6);
+  /*! red */
+  --fg-red: #D06C6C;
+  /*! hover */
+  --fg-hover: #AD5B5B;
+  /** FONT **/
+  --main-text-regular: "main-text-regular";
+  --main-text-bold: "main-text-bold";
+  --main-text-link: "main-text-link";
+  --label-text: "label-text";
+  --background-transition: background 0.4s ease;
+  /** Homepage **/
+  /** Hero Section **/
+  --hero-background: 'url("../images/assets/old-hero.png")';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-white);
+  font-family: "main-text-regular";
+}
+
+/** UTILITY: Colors **/
+/*! Background Color */
+/*! white */
+.bg-white {
+  background-color: var(--bg-white);
+}
+
+/*! black */
+.bg-black {
+  background-color: var(--bg-black);
+}
+
+/*! footer-black */
+.bg-footer-black {
+  background-color: var(--bg-footer-black);
+}
+
+/*! white-muted */
+.bg-white-muted {
+  background-color: var(--bg-white-muted);
+}
+
+/*! red */
+.bg-red {
+  background-color: var(--bg-red);
+}
+
+/*! hover */
+.bg-hover {
+  background-color: var(--bg-hover);
+}
+
+/*! Foreground Color */
+/*! white */
+.fg-white {
+  color: var(--fg-white);
+}
+
+/*! black */
+.fg-black {
+  color: var(--fg-black);
+}
+
+/*! footer-black */
+.fg-footer-black {
+  color: var(--fg-footer-black);
+}
+
+/*! white-muted */
+.fg-white-muted {
+  color: var(--fg-white-muted);
+}
+
+/*! red */
+.fg-red {
+  color: var(--fg-red);
+}
+
+/*! hover */
+.fg-hover {
+  color: var(--fg-hover);
+}
+
+.main-text-regular-12 {
+  font-family: "main-text-regular";
+  font-size: 0.75rem;
+}
+
+.main-text-regular-14 {
+  font-family: "main-text-regular";
+  font-size: 0.875rem;
+}
+
+.main-text-regular-16 {
+  font-family: "main-text-regular";
+  font-size: 1rem;
+}
+
+.main-text-regular-18 {
+  font-family: "main-text-regular";
+  font-size: 1.125rem;
+}
+
+.main-text-regular-20 {
+  font-family: "main-text-regular";
+  font-size: 1.25rem;
+}
+
+.main-text-bold-12 {
+  font-family: "main-text-bold";
+  font-size: 0.75rem;
+}
+
+.main-text-bold-14 {
+  font-family: "main-text-bold";
+  font-size: 0.875rem;
+}
+
+.main-text-bold-16 {
+  font-family: "main-text-bold";
+  font-size: 1rem;
+}
+
+.main-text-bold-18 {
+  font-family: "main-text-bold";
+  font-size: 1.125rem;
+}
+
+.main-text-bold-20 {
+  font-family: "main-text-bold";
+  font-size: 1.25rem;
+}
+
+.main-text-link-12 {
+  font-family: "main-text-link";
+  font-size: 0.75rem;
+}
+
+.main-text-link-14 {
+  font-family: "main-text-link";
+  font-size: 0.875rem;
+}
+
+.main-text-link-16 {
+  font-family: "main-text-link";
+  font-size: 1rem;
+}
+
+.label-text-12 {
+  font-family: "label-text";
+  font-size: 0.75rem;
+}
+
+.label-text-14 {
+  font-family: "label-text";
+  font-size: 0.875rem;
+}
+
+.label-text-16 {
+  font-family: "label-text";
+  font-size: 1rem;
+}
+
+.label-text-18 {
+  font-family: "label-text";
+  font-size: 1.125rem;
+}
+
+.label-text-20 {
+  font-family: "label-text";
+  font-size: 1.25rem;
+}
+
+.label-text-22 {
+  font-family: "label-text";
+  font-size: 1.375rem;
+}
+
+.label-text-24 {
+  font-family: "label-text";
+  font-size: 1.5rem;
+}
+
+.label-text-26 {
+  font-family: "label-text";
+  font-size: 1.625rem;
+}
+
+.label-text-28 {
+  font-family: "label-text";
+  font-size: 1.75rem;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.is-row {
+  flex-direction: row;
+}
+
+.is-column {
+  flex-direction: column;
+}
+
+.float-right {
+  justify-content: flex-end;
+}
+
+.float-start {
+  justify-content: flex-start;
+}
+
+.float-center {
+  justify-content: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+h1 {
+  font-family: "heading";
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-family: "heading";
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-family: "heading";
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-family: "heading";
+  font-size: 1.625rem;
+}
+
+h5 {
+  font-family: "heading";
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-family: "heading";
+  font-size: 1.375rem;
+}
+
+.Logo {
+  margin: 10px;
+  height: 50px;
+  background-image: url("../images/old-logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.MenuTrigger {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 10px;
+  background-image: url("../images/old-trigger.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.Heading .black {
+  color: #000;
+}
+.Heading .white {
+  color: #F00;
+}
+
+.Paragraph {
+  font-family: var(--main-text-regular);
+  margin-bottom: 0.5rem;
+}
+
+.Button {
+  margin-top: 1.5rem;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  min-width: 100px;
+  max-width: 120px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.Button[data-object-type=closed] {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: #D06C6C;
+}
+.Button[data-object-type=open] {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: #D06C6C;
+}
+.Button[data-object-type=colored] {
+  background-color: #D06C6C;
+  border: 1px solid #D06C6C;
+  border-radius: 0;
+  color: #FFF;
+}
+.Button:hover {
+  background-color: var(--bg-hover);
+  border: 1px solid var(--bg-hover);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+}
+
+.Image {
+  height: 30vh;
+  background-image: url("../images/assets/old-team.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.HeroImage {
+  height: 25vh;
+  background-image: url("../images/old-payoff.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.AboutContent {
+  display: flex;
+  align-items: center;
+}
+.AboutContent .content {
+  flex: 1;
+}
+.AboutContent .image {
+  flex: 1;
+  margin-right: 0;
+}
+
+.InfoContent {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  gap: 3rem;
+}
+
+.FooterContent {
+  display: flex;
+  align-items: center;
+}
+.FooterContent .content {
+  flex: 1;
+}
+.FooterContent .image {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 0;
+}
+
+.HeroContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.HeroContent .content {
+  flex: 1;
+  padding-right: 4rem;
+}
+.HeroContent .image {
+  flex: 1;
+  align-items: flex-start;
+}
+.HeroContent .buttonbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.Header {
+  background-color: var(--bg-white);
+}
+
+.Hero {
+  height: 47vh;
+  background-image: url("../images/assets/old-hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.AboutSection {
+  background-color: #D06C6C;
+  align-items: center;
+  padding: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.InfoSection {
+  background-color: #FFF;
+}
+
+.Footer {
+  background-color: var(--bg-footer-black);
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=main.css.map */

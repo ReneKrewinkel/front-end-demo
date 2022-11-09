@@ -1,0 +1,59 @@
+{
+  "unit": "rem",
+  "page": { "backgroundColor":  "white", "margin":  0, "padding":  0 },
+
+  "logo": "'../images/new-logo.svg'",
+  "payoff": "'../images/new-payoff.svg'",
+  "menu-trigger": "'../images/new-trigger.svg'",
+
+  "colors": [
+    { "type": "white", "color": "#FFF", "shades": [] },
+    { "type": "black", "color": "#000", "shades": [] },
+    { "type": "footer-black", "color": "#161616", "shades": [] },
+    { "type": "white-muted", "color":"rgba(255,255,255,0.6)", "shades": []},
+    { "type": "red", "color":  "#D06C6C", "shades":  []},
+    { "type": "hover", "color":  "#D5B738", "shades":  []}
+
+  ],
+
+  "fonts": [
+    { "type": "main-text-regular", "uri": "'../fonts/arial-webfont'", "sizes": [12,14,16,18,20] },
+    { "type": "main-text-bold", "uri": "'../fonts/arial_bold-webfont'", "sizes": [12,14,16,18,20]},
+    { "type": "main-text-link", "uri":  "'../fonts/arial_bold-webfont'", "sizes": [12,14,16] },
+    { "type": "label-text", "uri": "'../fonts/arial_bold-webfont'", "sizes": [12,14,16,18,20,22,24,26,28] }
+  ],
+
+  "button": {
+    "closed": { "background-color": "#F4D13D", "border-color":  "#F4D13D", "border-radius":  "20px", "color": "#FFF" },
+    "open": { "background-color": "transparent", "border-color":  "#F4D13D", "border-radius":  "20px", "color": "#FFF" },
+    "colored": { "background-color": "#5369AF", "border-color":  "#5369AF", "border-radius":  "20px", "color": "#FFF"}
+  },
+
+  "homepage": {
+    "hero": {
+      "background-image": "'../images/assets/new-hero.png'"
+    },
+    "about": {
+      "background-color": "#FFF",
+      "image": "'../images/assets/new-team.png'",
+      "margin": "-180px"
+    },
+    "info": {
+      "background-color": "#E6F1EA",
+      "background-image": ""
+    },
+    "footer": {
+      "background-color": "#161616",
+      "image": "'../images/assets/new-team.png'",
+      "margin": "-100px"
+    }
+  },
+  "headings": {
+    "type": "heading",
+    "uri": "'../fonts/axiastencilblack-webfont'",
+    "variant": [
+      { "h1": 28 }, { "h2": 28 }, { "h3": 28 },
+      { "h4": 26 }, { "h5": 24 }, { "h6": 22 }
+    ]
+  }
+}

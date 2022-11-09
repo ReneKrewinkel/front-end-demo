@@ -1,0 +1,35 @@
+$unit: map-get($tokens, 'unit');
+$colors: map-get($tokens, 'colors');
+$fonts: map-get($tokens, 'fonts');
+$headings: map-get($tokens, 'headings');
+$page: map-get($tokens, 'page');
+$buttons: map-get($tokens, 'button');
+
+$button-closed: map-get($buttons, 'closed');
+$button-open: map-get($buttons, 'open');
+$button-colored: map-get($buttons, 'colored');
+
+$logo: map-get($tokens, 'logo');
+$payoff: map-get($tokens, 'payoff');
+
+$menu-trigger: map-get($tokens, 'menu-trigger');
+
+$homepage: map-get($tokens, 'homepage');
+$hero: map-get($homepage, 'hero');
+$about: map-get($homepage, 'about');
+$info: map-get($homepage, 'info');
+$footer: map-get($homepage, 'footer');
+
+$hero-background: map-get($hero, "background-image");
+
+$about-background: map-get($about, "background-color");
+$about-image: map-get($about, "image");
+$about-margin: map-get($about, "margin");
+
+$info-background: map-get($info, "background-color");
+
+$footer-margin: map-get($footer, "margin");
+
+$color-types: "bg" "Background Color" "background-color",
+              "fg" "Foreground Color" "color";
+
