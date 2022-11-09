@@ -102,7 +102,7 @@ h4, h5, h6 {
 /*! heading */
 @font-face {
   font-family: "heading";
-  src: url("../fonts/anoblack-webfont.woff") format("woff"), url("../fonts/anoblack-webfont.woff2") format("woff2");
+  src: url("../fonts/axiastencilblack-webfont.woff") format("woff"), url("../fonts/axiastencilblack-webfont.woff2") format("woff2");
 }
 /** CUSTOM PROPERTIES **/
 :root {
@@ -119,7 +119,7 @@ h4, h5, h6 {
   /*! red */
   --bg-red: #D06C6C;
   /*! hover */
-  --bg-hover: #AD5B5B;
+  --bg-hover: #D5B738;
   /*! Foreground Color */
   /*! white */
   --fg-white: #FFF;
@@ -132,7 +132,7 @@ h4, h5, h6 {
   /*! red */
   --fg-red: #D06C6C;
   /*! hover */
-  --fg-hover: #AD5B5B;
+  --fg-hover: #D5B738;
   /** FONT **/
   --main-text-regular: "main-text-regular";
   --main-text-bold: "main-text-bold";
@@ -405,7 +405,7 @@ h6 {
 .Logo {
   margin: 10px;
   height: 50px;
-  background-image: url("../images/old-logo.svg");
+  background-image: url("../images/new-logo.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
@@ -417,7 +417,7 @@ h6 {
   height: 50px;
   top: 10px;
   right: 10px;
-  background-image: url("../images/old-trigger.svg");
+  background-image: url("../images/new-trigger.svg");
   background-size: contain;
   background-position: center;
 }
@@ -447,21 +447,21 @@ h6 {
   transition: all 0.4s ease;
 }
 .Button[data-object-type=closed] {
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0;
-  color: #D06C6C;
+  background-color: #F4D13D;
+  border: 1px solid #F4D13D;
+  border-radius: 20px;
+  color: #FFF;
 }
 .Button[data-object-type=open] {
   background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0;
-  color: #D06C6C;
+  border: 1px solid #F4D13D;
+  border-radius: 20px;
+  color: #FFF;
 }
 .Button[data-object-type=colored] {
-  background-color: #D06C6C;
-  border: 1px solid #D06C6C;
-  border-radius: 0;
+  background-color: #5369AF;
+  border: 1px solid #5369AF;
+  border-radius: 20px;
   color: #FFF;
 }
 .Button:hover {
@@ -472,7 +472,7 @@ h6 {
 
 .Image {
   height: 30vh;
-  background-image: url("../images/assets/old-team.png");
+  background-image: url("../images/assets/new-team.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -480,7 +480,7 @@ h6 {
 
 .HeroImage {
   height: 25vh;
-  background-image: url("../images/old-payoff.svg");
+  background-image: url("../images/new-payoff.svg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -495,7 +495,7 @@ h6 {
 }
 .AboutContent .image {
   flex: 1;
-  margin-right: 0;
+  margin-right: -180px;
 }
 
 .InfoContent {
@@ -516,7 +516,7 @@ h6 {
   flex: 1;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: 0;
+  margin-left: -100px;
 }
 
 .HeroContent {
@@ -545,7 +545,7 @@ h6 {
 
 .Hero {
   height: 47vh;
-  background-image: url("../images/assets/old-hero.png");
+  background-image: url("../images/assets/new-hero.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -557,7 +557,7 @@ h6 {
 }
 
 .AboutSection {
-  background-color: #D06C6C;
+  background-color: #FFF;
   align-items: center;
   padding: 5rem;
   padding-top: 2.5rem;
@@ -566,7 +566,7 @@ h6 {
 }
 
 .InfoSection {
-  background-color: #FFF;
+  background-color: #E6F1EA;
 }
 
 .Footer {

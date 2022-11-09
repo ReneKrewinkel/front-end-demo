@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --silent",
     "eject": "react-scripts eject",
     "tokens": "json-to-scss src/resources/design/tokens.json src/resources/styles/tokens/_tokens.scss",
     "storybook": "start-storybook -p 6006 -s public",
